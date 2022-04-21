@@ -14,14 +14,14 @@ module.exports = {
   },
   output: {
     filename: '[name].[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     clean: true,
   },
   devtool:
     mode === 'development' ? 'inline-source-map' : 'inline-cheap-source-map',
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'build'),
     },
     open: true,
     hot: false,
