@@ -13,8 +13,11 @@ export default function TaskForm({ tasks }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = inputValue.trim();
-    if (tasks.some((t) => t === value)) {
-      const error = new Error('Task already exists, choose another name.');
+    if (!value.length) return;
+    if (tasks.some((t) => t.toLowerCase() === value.toLocaleLowerCase())) {
+      const error = new Error(
+        'Task already exists, please choose another name.'
+      );
       dispatch(ACTIONS.error(error));
     } else {
       const task = {
@@ -23,7 +26,6 @@ export default function TaskForm({ tasks }) {
         done: false,
       };
       dispatch(ACTIONS.addTask(task));
-      dispatch(ACTIONS.error(null));
     }
     setInputValue('');
   };
