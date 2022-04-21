@@ -1,0 +1,23 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  i {
+    font-size: 3rem;
+    transition: color 0.5s;
+
+    &:hover {
+      color: var(--action)
+    }
+  }
+}
+
+.dark {
+  i {
+    color: var(--font-dark);
+  }
+}

@@ -1,0 +1,32 @@
+.task {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--font-dark);
+  font-size: 1.1rem;
+  font-family: 'Playfair Display', sans-serif;
+  background-color: var(--bg-light);
+  padding: 1rem;
+  border: 3px solid var(--bg-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow), var(--inset-shadow);
+
+  i {
+    color: var(--font-dark);
+  }
+}
+
+.done {
+  color: var(--font);
+  background-color: var(--font-dark);
+
+  p {
+    text-decoration: line-through;
+  }
+
+  i {
+    color: var(--font);
+  }
+}
