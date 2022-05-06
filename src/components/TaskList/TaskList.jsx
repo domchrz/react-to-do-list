@@ -1,7 +1,7 @@
-import Task from '../Task/Task';
-import styles from './Tasks.module.scss';
+import Task from '../Task';
+import styles from './TaskList.module.scss';
 
-export default function Tasks({ removeTask, tasks }) {
+export default function TaskList({ removeTask, tasks }) {
   return (
     <ul className={styles.tasks}>
       {tasks.map((task) => (

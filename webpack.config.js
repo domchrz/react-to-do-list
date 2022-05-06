@@ -10,7 +10,7 @@ const mode =
 module.exports = {
   mode: mode,
   entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
+    bundle: path.resolve(__dirname, 'src/index.jsx'),
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -62,6 +62,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.cjs'],
   }
 };

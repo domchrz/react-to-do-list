@@ -12,6 +12,7 @@
   border: 3px solid var(--bg-light);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow), var(--inset-shadow);
+  opacity: 1;
 
   i {
     color: var(--font-dark);
@@ -29,4 +30,8 @@
   i {
     color: var(--font);
   }
+}
+
+.dragged {
+  opacity: 0.5;
 }

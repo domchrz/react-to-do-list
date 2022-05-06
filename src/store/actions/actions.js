@@ -1,6 +1,6 @@
-import createAction from '../../helpers/actions/createAction';
-import createThunkAction from '../../helpers/actions/createThunkAction';
-import ACTIONS_TYPES from './action.types';
+import createAction from './createAction';
+import createThunkAction from './createThunkAction';
+import ACTIONS_TYPES from './types';
 
 const ACTIONS = {
   addTask: createThunkAction(ACTIONS_TYPES.addTask),

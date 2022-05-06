@@ -1,4 +1,4 @@
-import ACTIONS from '../../store/actions/action.types';
+import ACTIONS from './types';
 import createAction from './createAction';
 
 const promiseAction = (cb) =>

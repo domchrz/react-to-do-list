@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import errorReducer from './error.reducer';
-import isLoadingReducer from './loading.reducer';
-import tasksReducer from './tasks.reducer';
+import errorReducer from './error';
+import isLoadingReducer from './isLoading';
+import tasksReducer from './tasks';
 
 const rootReducer = combineReducers({
   tasks: tasksReducer,
