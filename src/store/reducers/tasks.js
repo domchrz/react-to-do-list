@@ -5,12 +5,10 @@ const tasksReducer = (state = [], action) => {
     case 'REMOVE_TASK':
       return state.filter(({ id }) => id !== action.payload);
     case 'TOGGLE_DONE': {
-      const index = state.findIndex(({ id }) => id === action.payload);
-      return [
-        ...state.slice(0, index),
-        { ...state[index], done: !state[index].done },
-        ...state.slice(index + 1),
-      ];
+      const indexToUpdate = state.findIndex(({ id }) => id === action.payload);
+      return state.map((item, index) =>
+        index === indexToUpdate ? { ...item, done: !item.done } : item
+      );
     }
     default:
       return state;
