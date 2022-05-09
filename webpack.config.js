@@ -62,6 +62,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.cjs'],
+    extensions: ['.js', '.jsx'],
   }
 };
