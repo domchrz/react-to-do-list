@@ -1,0 +1,21 @@
+.input {
+  position: relative;
+  border: none;
+  background: none;
+  color: var(--font);
+  font-size: 1rem;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  border: 1px solid var(--font);
+  transition: background-color 0.3s, border-color 0.3s;
+  padding: 0.4em .8em;
+  border-radius: 0.15em;
+
+  &:focus {
+    border-radius: 0.15em;
+    outline: none;
+    color: var(--font-dark);
+    background-color: var(--bg-light);
+    border-color: transparent;
+  }
+}

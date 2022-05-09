@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  min-height: 10rem;
+  border-radius: var(--border-radius);
+  transition: box-shadow .3s;
+
+  h2 {
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 2rem;
+    font-family: 'Ms Madi', cursive;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.drop {
+  box-shadow: var(--box-shadow);
+}

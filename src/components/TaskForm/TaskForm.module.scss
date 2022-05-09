@@ -1,0 +1,19 @@
+.form {
+  // background-color: red;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  display: flex;
+  font-family: 'Ms Madi', cursive;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .7rem;
+  }
+}
